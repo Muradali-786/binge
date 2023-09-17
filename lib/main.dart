@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Binge',
+
       initialRoute: RouteName.splash,
       onGenerateRoute: Routes.generateRoute,
     );

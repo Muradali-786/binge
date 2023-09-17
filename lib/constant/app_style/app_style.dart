@@ -93,4 +93,23 @@ class AppStyles {
       height: ht,
     );
   }
+  TextStyle nunitoSans(double size, Color color, FontWeight fw) {
+    return TextStyle(
+      fontFamily: 'Nunito Sans',
+      fontSize: size,
+      color: color,
+      fontWeight: fw,
+    );
+  }
+
+  TextStyle nunitoSansWithHt(
+      double size, Color color, FontWeight fw, double ht) {
+    return TextStyle(
+      fontFamily: 'Nunito Sans',
+      fontSize: size,
+      color: color,
+      fontWeight: fw,
+      height: ht,
+    );
+  }
 }

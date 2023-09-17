@@ -21,10 +21,13 @@ class AppColor{
   static const Color kGrey85 = Color(0xff858585);
 
   static const Color kPink=Color(0xffEC008B);
+  static const Color kAlertColor=Color(0xffff0f0f);
 
   static const Color kTextWhiteColor = Color(0xffffffff);
   static const Color kTextBlackColor = Color(0xff000000);
   static const Color kTextPinkColor = Color(0xffEC008B);
+  static const Color kTransparent =Color(0x00FFFFFF);
+
 
 
 

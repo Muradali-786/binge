@@ -99,6 +99,8 @@ flutter:
       fonts:
         - asset: assets/fonts/CatamaranRegular.ttf
           weight: 400
+        - asset: assets/fonts/CatamaranMedium.ttf
+          weight: 600
         - asset: assets/fonts/CatamaranBold.ttf
           weight: 700
         - asset: assets/fonts/CatamaranBlack.ttf
@@ -109,7 +111,16 @@ flutter:
           weight: 400
         - asset: assets/fonts/QuicksandBold.ttf
           weight: 700
-
+    - family: Nunito Sans
+      fonts:
+        - asset: assets/fonts/NunitoSansRegular.ttf
+          weight: 400
+        - asset: assets/fonts/NunitoSansMedium.ttf
+          weight: 600
+        - asset: assets/fonts/NunitoSansBold.ttf
+          weight: 700
+        - asset: assets/fonts/NunitoSansBlack.ttf
+          weight: 900
   # fonts:
   #   - family: Schyler
   #     fonts:
