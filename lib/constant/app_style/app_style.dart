@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 
-
-
-class AppStyles{
-
+class AppStyles {
   TextStyle defaultStyle(double size, Color color, FontWeight fw) {
     return TextStyle(
       // Replace 'MyCustomFont' with the actual font name
@@ -13,33 +10,87 @@ class AppStyles{
     );
   }
 
-  TextStyle defaultStyleWithHt(double size, Color color, FontWeight fw, double ht) {
-    return TextStyle(
+  TextStyle defaultStyleWithHt(
+      double size, Color color, FontWeight fw, double ht) {
+    return TextStyle(fontSize: size, color: color, fontWeight: fw, height: ht);
+  }
 
+  TextStyle poppins(double size, Color color, FontWeight fw) {
+    return TextStyle(
+      fontFamily: 'Poppins', // Replace 'MyCustomFont' with the actual font name
+      fontSize: size,
+      color: color,
+      fontWeight: fw,
+    );
+  }
+
+  TextStyle poppinsWithHt(double size, Color color, FontWeight fw, double ht) {
+    return TextStyle(
+        fontFamily:
+            'Poppins', // Replace 'MyCustomFont' with the actual font name
         fontSize: size,
         color: color,
         fontWeight: fw,
         height: ht);
   }
-  TextStyle poppins(double size, Color color, FontWeight fw) {
+
+  TextStyle montserrat(double size, Color color, FontWeight fw) {
     return TextStyle(
-      fontFamily:
-      'Poppins', // Replace 'MyCustomFont' with the actual font name
+      fontFamily: 'Montserrat',
       fontSize: size,
       color: color,
       fontWeight: fw,
     );
   }
-  TextStyle poppinsWithHt(double size, Color color, FontWeight fw,double ht) {
+
+  TextStyle montserratWithHt(
+      double size, Color color, FontWeight fw, double ht) {
     return TextStyle(
-      fontFamily:
-      'Poppins', // Replace 'MyCustomFont' with the actual font name
+      fontFamily: 'Montserrat',
       fontSize: size,
       color: color,
       fontWeight: fw,
-      height: ht
+      height: ht,
     );
   }
 
+  TextStyle catamaran(double size, Color color, FontWeight fw) {
+    return TextStyle(
+      fontFamily: 'Catamaran',
+      fontSize: size,
+      color: color,
+      fontWeight: fw,
+    );
+  }
 
+  TextStyle catamaranWithHt(
+      double size, Color color, FontWeight fw, double ht) {
+    return TextStyle(
+      fontFamily: 'Catamaran',
+      fontSize: size,
+      color: color,
+      fontWeight: fw,
+      height: ht,
+    );
+  }
+
+  TextStyle quicksand(double size, Color color, FontWeight fw) {
+    return TextStyle(
+      fontFamily: 'Quicksand',
+      fontSize: size,
+      color: color,
+      fontWeight: fw,
+    );
+  }
+
+  TextStyle quicksandWithHt(
+      double size, Color color, FontWeight fw, double ht) {
+    return TextStyle(
+      fontFamily: 'Quicksand',
+      fontSize: size,
+      color: color,
+      fontWeight: fw,
+      height: ht,
+    );
+  }
 }

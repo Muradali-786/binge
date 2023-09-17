@@ -49,10 +49,10 @@ class _AuthPageState extends State<AuthPage>
                 indicatorColor: AppColor.kPink,
                 controller: _tabController,
                 labelColor: AppColor.kTextPinkColor,
-                labelStyle: AppStyles().poppinsWithHt(
+                labelStyle: AppStyles().catamaranWithHt(
                     32, AppColor.kTextPinkColor, FontWeight.w700, 1),
                 unselectedLabelColor: AppColor.kTextWhiteColor,
-                unselectedLabelStyle: AppStyles().poppinsWithHt(
+                unselectedLabelStyle: AppStyles().catamaranWithHt(
                     32, AppColor.kTextWhiteColor, FontWeight.w400, 1),
                 tabs: const [
                   Tab(

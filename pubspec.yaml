@@ -81,12 +81,35 @@ flutter:
   fonts:
     - family: Poppins
       fonts:
-        - asset: assets/fonts/PoppinsBlack.ttf
-          weight: 900
-        - asset: assets/fonts/PoppinsBold.ttf
-          weight: 700
         - asset: assets/fonts/PoppinsRegular.ttf
           weight: 400
+        - asset: assets/fonts/PoppinsBold.ttf
+          weight: 700
+        - asset: assets/fonts/PoppinsBlack.ttf
+          weight: 900
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/MontserratRegular.ttf
+          weight: 400
+        - asset: assets/fonts/MontserratBold.ttf
+          weight: 700
+        - asset: assets/fonts/MontserratBlack.ttf
+          weight: 900
+    - family: Catamaran
+      fonts:
+        - asset: assets/fonts/CatamaranRegular.ttf
+          weight: 400
+        - asset: assets/fonts/CatamaranBold.ttf
+          weight: 700
+        - asset: assets/fonts/CatamaranBlack.ttf
+          weight: 900
+    - family: Quicksand
+      fonts:
+        - asset: assets/fonts/QuicksandRegular.ttf
+          weight: 400
+        - asset: assets/fonts/QuicksandBold.ttf
+          weight: 700
+
   # fonts:
   #   - family: Schyler
   #     fonts:
