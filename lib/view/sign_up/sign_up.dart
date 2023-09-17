@@ -193,12 +193,14 @@ class _SignUpState extends State<SignUp> {
                                   Icons.check_box,
                                   color: AppColor.kPink,
                                 ),
-                                Text(
-                                  'I agree to recieve marketing communication',
-                                  style: AppStyles().nunitoSans(
-                                      12,
-                                      AppColor.kTextWhiteColor,
-                                      FontWeight.w400),
+                                Expanded(
+                                  child: Text(
+                                    'I agree to recieve marketing communication from society',
+                                    style: AppStyles().nunitoSans(
+                                        12,
+                                        AppColor.kTextWhiteColor,
+                                        FontWeight.w400),
+                                  ),
                                 ),
                               ],
                             ),
@@ -208,7 +210,7 @@ class _SignUpState extends State<SignUp> {
                       padding: const EdgeInsets.only(top: 20, bottom: 10),
                       child: CustomButton(
                           onTap: () {
-
+                           Navigator.pushNamed(context, RouteName.otp);
 
                           }, title: 'Sign Up', color: AppColor.kPink),
                     ),
