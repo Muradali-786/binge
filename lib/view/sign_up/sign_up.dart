@@ -3,6 +3,7 @@ import 'package:binge/constant/app_style/app_style.dart';
 import 'package:binge/constant/images/image_constant.dart';
 import 'package:binge/utils/component/custom_button.dart';
 import 'package:binge/utils/component/input_text_field.dart';
+import 'package:binge/utils/component/logo_image.dart';
 import 'package:binge/utils/route/route_name.dart';
 import 'package:binge/utils/utils.dart';
 import 'package:binge/view/login/login.dart';
@@ -46,12 +47,7 @@ class _SignUpState extends State<SignUp> {
                 const EdgeInsets.only( right: 27, left: 27, bottom: 16),
                 child: Column(
                   children: [
-                    Center(
-                      child: Image(
-                          height: 182,
-                          width: 131,
-                          image: AssetImage(ImageConstant.bingeLogo)),
-                    ),
+                    const LogoImage(),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
