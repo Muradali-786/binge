@@ -170,7 +170,9 @@ class _LoginState extends State<Login> {
                 Padding(
                   padding: const EdgeInsets.only(top: 20, bottom: 20),
                   child: CustomButton(
-                      onTap: () {}, title: 'Login', color: AppColor.kPink),
+                      onTap: () {
+                        Navigator.pushNamed(context, RouteName.home);
+                      }, title: 'Login', color: AppColor.kPink),
                 ),
                 Row(
                   children: [
@@ -179,15 +181,17 @@ class _LoginState extends State<Login> {
                       style: AppStyles().nunitoSans(
                           16, AppColor.kTextWhiteColor, FontWeight.w400),
                     ),
-                    TextButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, RouteName.signUp);
+                    Expanded(
+                      child: TextButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, RouteName.signUp);
 
-                      },
-                      child: Text(
-                        ' Create an account',
-                        style: AppStyles().nunitoSans(
-                            18, AppColor.kTextPinkColor, FontWeight.w600),
+                        },
+                        child: Text(
+                          ' Create an account',
+                          style: AppStyles().nunitoSans(
+                              18, AppColor.kTextPinkColor, FontWeight.w600),
+                        ),
                       ),
                     )
                   ],
