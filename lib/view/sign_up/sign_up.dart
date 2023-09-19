@@ -44,7 +44,7 @@ class _SignUpState extends State<SignUp> {
             child: SingleChildScrollView(
               child: Padding(
                 padding:
-                const EdgeInsets.only( right: 27, left: 27, bottom: 16),
+                const EdgeInsets.only( right: 27, left: 27, bottom: 24),
                 child: Column(
                   children: [
                     const LogoImage(),

@@ -1,9 +1,11 @@
+import 'package:binge/view/create_channel/create_channel.dart';
 import 'package:binge/view/login/login.dart';
 import 'package:binge/view/otp/otp.dart';
 import 'package:binge/view/profile/acount_setup/acount_setup.dart';
 import 'package:binge/view/profile/age/age_selection.dart';
 import 'package:binge/view/profile/profile_setup.dart';
 import 'package:binge/view/sign_up/sign_up.dart';
+import 'package:binge/view/upload_movie/upload_movie.dart';
 import 'package:flutter/material.dart';
 import 'package:binge/utils/route/route_name.dart';
 import 'package:binge/view/home/home.dart';
@@ -27,6 +29,11 @@ class Routes {
         return MaterialPageRoute(builder: (_) => const AgeSelection());
       case RouteName.accountSetup:
         return MaterialPageRoute(builder: (_) => const AccountSetup());
+      case RouteName.createChannel:
+        return MaterialPageRoute(builder: (_) => const CreateChannel());
+      case RouteName.uploadMovie:
+        return MaterialPageRoute(builder: (_) => const UploadMovie());
+
 
 
 

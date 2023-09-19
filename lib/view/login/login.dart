@@ -39,7 +39,7 @@ class _LoginState extends State<Login> {
             child: SingleChildScrollView(
           child: Padding(
             padding:
-                const EdgeInsets.only( right: 27, left: 27, bottom: 16),
+                const EdgeInsets.only( right: 27, left: 27, bottom:24),
             child: Column(
               children: [
                 const LogoImage(),

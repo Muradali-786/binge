@@ -112,4 +112,24 @@ class AppStyles {
       height: ht,
     );
   }
+
+  TextStyle openSans(double size, Color color, FontWeight fw) {
+    return TextStyle(
+      fontFamily: 'OpenSans',
+      fontSize: size,
+      color: color,
+      fontWeight: fw,
+    );
+  }
+
+  TextStyle openSansWithHt(
+      double size, Color color, FontWeight fw, double ht) {
+    return TextStyle(
+      fontFamily: 'OpenSans',
+      fontSize: size,
+      color: color,
+      fontWeight: fw,
+      height: ht,
+    );
+  }
 }

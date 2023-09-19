@@ -9,6 +9,8 @@ class RouteName {
   static const String profileSetup = 'profile_setup';
   static const String ageSelection = 'age_selection';
   static const String accountSetup = 'account_setup';
+  static const String createChannel = 'create_channel';
+  static const String uploadMovie = 'upload_movie';
 
 
 

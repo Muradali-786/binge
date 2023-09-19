@@ -30,17 +30,19 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       flexibleSpace: PreferredSize(
         preferredSize: Size.fromHeight(preferredHeight),
         child: Center(
-          child: Text(
-            titleText,
-            style: textStyle ??
-                AppStyles().quicksandWithHt(24, AppColor.kTextWhiteColor, FontWeight.w700, 3.5),
+          child: Expanded(
+            child: Text(
+              titleText,
+              style: textStyle ??
+                  AppStyles().quicksandWithHt(24, AppColor.kTextWhiteColor, FontWeight.w700, 3.5),
+            ),
           ),
         ),
       ),
       actions: <Widget>[
         if (showIcon) // Render the icon conditionally
           const Padding(
-            padding: EdgeInsets.only(right: 30, top: 10),
+            padding: EdgeInsets.only(right: 25,top: 4),
             child: Icon(Icons.menu, color: AppColor.kWhite),
           ),
       ],

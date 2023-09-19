@@ -27,6 +27,23 @@ class _AccountSetupState extends State<AccountSetup> {
   TextEditingController subController = TextEditingController();
   FocusNode subFocus = FocusNode();
   @override
+  void dispose() {
+    // Dispose the controllers
+    usernameController.dispose();
+    firstNameController.dispose();
+    lastNameController.dispose();
+    subController.dispose();
+
+    // Dispose the focus nodes
+    usernameFocus.dispose();
+    firstNameFocus.dispose();
+    lastNameFocus.dispose();
+    subFocus.dispose();
+
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColor.kBackgroundColor,
