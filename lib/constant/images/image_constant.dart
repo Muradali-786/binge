@@ -2,6 +2,9 @@ class ImageConstant{
 
 
   static String bingeLogo = 'assets/image_png/binge_logo.png';
+  static String niveMovieImg = 'assets/image_png/knive.png';
+  static String soulMovieImg = 'assets/image_png/soul.png';
+  static String meg2MaskImage = 'assets/image_png/meg2mask.png';
   static String topIstMovieImage = 'assets/image_png/One.png';
   static String topSecMovieImage = 'assets/image_png/Two.png';
   static String meg2Image = 'assets/image_png/meg2.png';
@@ -18,9 +21,12 @@ class ImageConstant{
   static String channelIcon = 'assets/icon_png/channel.png';
   static String channelPinkIcon = 'assets/icon_png/channel_pink.png';
   static String boxIcon = 'assets/icon_png/box.png';
+  static String starIcon = 'assets/icon_png/star.png';
+  static String timerIcon = 'assets/icon_png/timer.png';
 
 
   List<dynamic> imageList=[trenchImage,blueBeetleImage,transformerImage];
+  List<dynamic> movieList=[niveMovieImg,soulMovieImg,niveMovieImg,soulMovieImg];
 
 
 }

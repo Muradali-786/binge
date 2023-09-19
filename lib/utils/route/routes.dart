@@ -1,4 +1,5 @@
 import 'package:binge/view/create_channel/create_channel.dart';
+import 'package:binge/view/home/movie_detail/movie_detail.dart';
 import 'package:binge/view/login/login.dart';
 import 'package:binge/view/otp/otp.dart';
 import 'package:binge/view/profile/acount_setup/acount_setup.dart';
@@ -33,15 +34,10 @@ class Routes {
         return MaterialPageRoute(builder: (_) => const CreateChannel());
       case RouteName.uploadMovie:
         return MaterialPageRoute(builder: (_) => const UploadMovie());
-
-
-
-
-
+      case RouteName.movieDetail:
+        return MaterialPageRoute(builder: (_) => const MovieDetail());
       case RouteName.home:
         return MaterialPageRoute(builder: (_) => const Home());
-
-
 
       default:
         return MaterialPageRoute(builder: (_) {

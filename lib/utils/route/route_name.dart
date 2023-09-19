@@ -11,6 +11,7 @@ class RouteName {
   static const String accountSetup = 'account_setup';
   static const String createChannel = 'create_channel';
   static const String uploadMovie = 'upload_movie';
+  static const String movieDetail = 'movie_detail';
 
 
 

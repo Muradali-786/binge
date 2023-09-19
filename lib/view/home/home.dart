@@ -1,6 +1,7 @@
 import 'package:binge/constant/app_style/app_color.dart';
 import 'package:binge/constant/app_style/app_style.dart';
 import 'package:binge/constant/images/image_constant.dart';
+import 'package:binge/utils/route/route_name.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -18,7 +19,7 @@ class _HomeState extends State<Home> {
       body: SafeArea(
           child: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(top: 34.0, left: 27, right: 5,bottom: 25),
+          padding: const EdgeInsets.only(top: 34.0, left: 22, right: 5,bottom: 25),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -30,10 +31,16 @@ class _HomeState extends State<Home> {
               const SizedBox(
                 height: 20,
               ),
-              Image(
-                  height: 180,
-                  width: MediaQuery.of(context).size.width,
-                  image: AssetImage(ImageConstant.meg2Image)),
+              InkWell(
+                onTap: (){
+                  Navigator.pushNamed(context, RouteName.movieDetail);
+                },
+                child: Image(
+                    height: 180,
+                    fit: BoxFit.cover,
+                    width: MediaQuery.of(context).size.width,
+                    image: AssetImage(ImageConstant.meg2Image)),
+              ),
               Padding(
                 padding: const EdgeInsets.only(top:20,bottom: 12),
                 child: Row(
