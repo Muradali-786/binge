@@ -1,7 +1,9 @@
 import 'package:binge/constant/app_style/app_color.dart';
 import 'package:binge/constant/app_style/app_style.dart';
 import 'package:binge/constant/images/image_constant.dart';
+import 'package:binge/utils/route/route_name.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class MovieDetail extends StatefulWidget {
   const MovieDetail({super.key});
@@ -17,6 +19,7 @@ class _MovieDetailState extends State<MovieDetail> {
     'Soul(1920)',
     'Knives(2020)'
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,11 +40,23 @@ class _MovieDetailState extends State<MovieDetail> {
                 )),
             ClipRRect(
               borderRadius: BorderRadius.circular(10),
-              child: Image(
+              child: Container(
                   height: 351,
-                  fit: BoxFit.cover,
                   width: MediaQuery.of(context).size.width,
-                  image: AssetImage(ImageConstant.meg2MaskImage)),
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: AssetImage(ImageConstant.meg4))
+                ),
+                child: Center(child: InkWell
+
+                  (
+                    onTap: (){
+                      Navigator.pushNamed(context, RouteName.watchMovie);
+                    },
+                    child: Image(image: AssetImage(ImageConstant.pauseIcon))),),
+
+              ),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 24, right: 24, top: 20),

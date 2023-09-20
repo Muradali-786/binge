@@ -40,12 +40,61 @@ class _HomeState extends State<Home> {
                 onTap: (){
                   Navigator.pushNamed(context, RouteName.movieDetail);
                 },
-                child: Image(
-                    height: 180,
-                    fit: BoxFit.cover,
-                    width: MediaQuery.of(context).size.width,
-                    image: AssetImage(ImageConstant.meg2Image)),
+                child: Container(
+                  height: 180,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage(ImageConstant.meg2Image) )
+                  ),
+                  child: Stack(
+                    children: [
+                   Padding(
+                     padding: const EdgeInsets.only(top:85 ,right: 70),
+                     child: Align(
+                       alignment: Alignment.topCenter,
+                       child: Column(
+                         mainAxisAlignment: MainAxisAlignment.start,
+                         crossAxisAlignment: CrossAxisAlignment.start,
+                         children: [
+                           Text('HBO',style: AppStyles()
+                               .openSans(12, AppColor.kTextWhiteColor, FontWeight.w700),),
+                           Text('Meg2:The Trench ',style: AppStyles()
+                               .poppins(24, AppColor.kTextWhiteColor, FontWeight.w900),),
+                         ],
+                       ),
+
+                     ),
+                   ),
+                      Positioned(
+                        bottom: 23,
+                        left: 40,
+                        child: Row(
+                          children: [
+                            Text('Resolution:4k',style: AppStyles()
+                                .openSans(12, AppColor.kTextWhiteColor, FontWeight.w700),),
+                            const SizedBox(width: 8,),
+                            Text('Runtime 1hr,37min ',style: AppStyles()
+                                .openSans(12, AppColor.kTextWhiteColor, FontWeight.w700),),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: Align(
+                          alignment: Alignment.centerRight,
+                          child:  Image(image: AssetImage(ImageConstant.dandi)),
+                        ),
+                      )
+
+
+
+                    ],
+                  ),
+                ),
               ),
+
               Padding(
                 padding: const EdgeInsets.only(top:20,bottom: 12),
                 child: Row(
