@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Binge',
+      title: 'Binge',//title of the app
 
       initialRoute: RouteName.splash,
       onGenerateRoute: Routes.generateRoute,
