@@ -13,7 +13,10 @@ class ProfileSetup extends StatefulWidget {
 }
 
 class _ProfileSetupState extends State<ProfileSetup> {
-  String selectedGender = '';
+  String selectedOption = ''; // Store the selected option
+
+  final List<String> options = ['Male', 'Female', 'Prefer Not to Say'];
+
 
   @override
   Widget build(BuildContext context) {
@@ -39,53 +42,53 @@ class _ProfileSetupState extends State<ProfileSetup> {
             Center(
               child: Text(
                 'What is your gender?',
-                style: AppStyles().quicksand(
+                style: AppStyles().quickSand(
                   16,
                   AppColor.kTextWhiteColor,
                   FontWeight.w400,
                 ),
               ),
             ),
+
             const SizedBox(height: 20),
-            GenderSelection(
-              title: 'Male',
-              isSelected: selectedGender == 'Male',
-              onSelect: () {
-                setState(() {
-                  if (selectedGender == 'Male') {
-                    selectedGender = ''; // Deselect if already selected
-                  } else {
-                    selectedGender = 'Male';
-                  }
-                });
+            ListView.builder(
+              shrinkWrap: true,
+              itemCount: options.length,
+              itemBuilder: (context, index) {
+                final option = options[index];
+                final isSelected = option == selectedOption;
+                final textColor = isSelected ? AppColor.kTextWhiteColor : AppColor.kTextBlackColor;
+                final containerColor = isSelected ? AppColor.kPink :AppColor.kWhite;
+
+                return GestureDetector(
+                  onTap: () {
+                    // Toggle the selected state
+                    setState(() {
+                      if (isSelected) {
+                        selectedOption = ''; // Deselect if already selected
+                      } else {
+                        selectedOption = option; // Select the option
+                      }
+                    });
+                  },
+                  child: Container(
+                    margin: const EdgeInsets.only(left: 37, right: 37, top: 15),
+                    height: 50,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: containerColor,
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                    alignment: Alignment.center,
+                    child: Text(
+                      option,
+                      style: AppStyles().montserrat(17, textColor, FontWeight.w700),
+                    ),
+                  ),
+                );
               },
             ),
-            GenderSelection(
-              title: 'Female',
-              isSelected: selectedGender == 'Female',
-              onSelect: () {
-                setState(() {
-                  if (selectedGender == 'Female') {
-                    selectedGender = ''; // Deselect if already selected
-                  } else {
-                    selectedGender = 'Female';
-                  }
-                });
-              },
-            ),
-            GenderSelection(
-              title: 'Prefer Not to Say',
-              isSelected: selectedGender == 'Prefer Not to Say',
-              onSelect: () {
-                setState(() {
-                  if (selectedGender == 'Prefer Not to Say') {
-                    selectedGender = ''; // Deselect if already selected
-                  } else {
-                    selectedGender = 'Prefer Not to Say';
-                  }
-                });
-              },
-            ),
+
             Padding(
               padding: const EdgeInsets.only(
                   left: 37, right: 37, top: 25, bottom: 17),
@@ -104,39 +107,5 @@ class _ProfileSetupState extends State<ProfileSetup> {
   }
 }
 
-class GenderSelection extends StatelessWidget {
-  final String title;
-  final bool isSelected;
-  final VoidCallback onSelect;
 
-  const GenderSelection({
-    required this.title,
-    required this.isSelected,
-    required this.onSelect,
-  });
 
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onSelect,
-      child: Container(
-        margin: const EdgeInsets.only(left: 37, right: 37, top: 15),
-        height: 50,
-        width: double.infinity,
-        decoration: BoxDecoration(
-          color: isSelected ? AppColor.kPink : AppColor.kWhite,
-          borderRadius: BorderRadius.circular(50),
-        ),
-        alignment: Alignment.center,
-        child: Text(
-          title,
-          style: TextStyle(
-            fontSize: 17,
-            color: isSelected ? AppColor.kTextWhiteColor : AppColor.kTextBlackColor,
-            fontWeight: FontWeight.w700,
-          ),
-        ),
-      ),
-    );
-  }
-}

@@ -74,7 +74,7 @@ class AppStyles {
     );
   }
 
-  TextStyle quicksand(double size, Color color, FontWeight fw) {
+  TextStyle quickSand(double size, Color color, FontWeight fw) {
     return TextStyle(
       fontFamily: 'Quicksand',
       fontSize: size,
@@ -83,7 +83,7 @@ class AppStyles {
     );
   }
 
-  TextStyle quicksandWithHt(
+  TextStyle quickSandWithHt(
       double size, Color color, FontWeight fw, double ht) {
     return TextStyle(
       fontFamily: 'Quicksand',

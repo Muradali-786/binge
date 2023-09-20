@@ -12,6 +12,9 @@ class RouteName {
   static const String createChannel = 'create_channel';
   static const String uploadMovie = 'upload_movie';
   static const String movieDetail = 'movie_detail';
+  static const String categories = 'categories';
+  static const String watchMovie = 'watch_movie';
+  static const String movies = 'movies';
 
 
 

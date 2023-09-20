@@ -1,6 +1,9 @@
 import 'package:binge/view/create_channel/create_channel.dart';
+import 'package:binge/view/home/categories/categories.dart';
 import 'package:binge/view/home/movie_detail/movie_detail.dart';
+import 'package:binge/view/home/watch_movie/watch_movie.dart';
 import 'package:binge/view/login/login.dart';
+import 'package:binge/view/movies/movies.dart';
 import 'package:binge/view/otp/otp.dart';
 import 'package:binge/view/profile/acount_setup/acount_setup.dart';
 import 'package:binge/view/profile/age/age_selection.dart';
@@ -38,6 +41,13 @@ class Routes {
         return MaterialPageRoute(builder: (_) => const MovieDetail());
       case RouteName.home:
         return MaterialPageRoute(builder: (_) => const Home());
+      case RouteName.categories:
+        return MaterialPageRoute(builder: (_) => const Categories());
+      case RouteName.watchMovie:
+        return MaterialPageRoute(builder: (_) => const WatchMovie());
+      case RouteName.movies:
+        return MaterialPageRoute(builder: (_) => const Movies());
+
 
       default:
         return MaterialPageRoute(builder: (_) {

@@ -40,7 +40,7 @@ class _AgeSelectionState extends State<AgeSelection> {
             Center(
               child: Text(
                 'What is your age?',
-                style: AppStyles().quicksand(
+                style: AppStyles().quickSand(
                   16,
                   AppColor.kTextWhiteColor,
                   FontWeight.w400,

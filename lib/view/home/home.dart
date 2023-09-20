@@ -24,10 +24,15 @@ class _HomeState extends State<Home> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Image(
-                  height: 24,
-                  width: 24,
-                  image: AssetImage(ImageConstant.boxIcon)),
+              InkWell(
+                onTap: (){
+                  Navigator.pushNamed(context, RouteName.categories);
+                },
+                child: Image(
+                    height: 24,
+                    width: 24,
+                    image: AssetImage(ImageConstant.boxIcon)),
+              ),
               const SizedBox(
                 height: 20,
               ),
@@ -129,7 +134,7 @@ class MovieList extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 3.0),
                       child: Image(
                           height: 184,
-                          width: 116,
+                          width: 118,
                           image: AssetImage(ImageConstant().imageList[index])),
                     );
                   }),
@@ -140,3 +145,4 @@ class MovieList extends StatelessWidget {
     );
   }
 }
+

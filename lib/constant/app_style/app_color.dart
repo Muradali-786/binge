@@ -29,7 +29,11 @@ class AppColor{
   static const Color kTextPinkColor = Color(0xffEC008B);
   static const Color kTransparent =Color(0x00FFFFFF);
 
-
+  static const blackWhiteGradient=LinearGradient(
+    begin: Alignment.centerRight,
+    end: Alignment.centerLeft,
+    colors: [Color(0xFF313440),Color(0xff858585)],
+  );
 
 
 

@@ -51,7 +51,7 @@ class _MovieDetailState extends State<MovieDetail> {
                 children: [
                   Text(
                     'Meg 2 : The Trench',
-                    style: AppStyles().quicksand(
+                    style: AppStyles().quickSand(
                         24, AppColor.kTextWhiteColor, FontWeight.w700),
                   ),
                   Padding(
@@ -61,13 +61,13 @@ class _MovieDetailState extends State<MovieDetail> {
                         Image(image: AssetImage(ImageConstant.timerIcon)),
                         const SizedBox(width: 5),
                         Text('152 minutes',
-                            style: AppStyles().quicksand(
+                            style: AppStyles().quickSand(
                                 12, AppColor.kTextWhiteColor, FontWeight.w700)),
                         const SizedBox(width: 25),
                         Image(image: AssetImage(ImageConstant.starIcon)),
                         const SizedBox(width: 5),
                         Text('7.0 ( IMD)',
-                            style: AppStyles().quicksand(
+                            style: AppStyles().quickSand(
                                 12, AppColor.kTextWhiteColor, FontWeight.w700)),
                       ],
                     ),
@@ -80,7 +80,7 @@ class _MovieDetailState extends State<MovieDetail> {
                     ),
                   ),
                   Text('Synopsis',
-                      style: AppStyles().quicksand(
+                      style: AppStyles().quickSand(
                           20, AppColor.kTextWhiteColor, FontWeight.w700)),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 12.0),
@@ -89,7 +89,7 @@ class _MovieDetailState extends State<MovieDetail> {
                         Expanded(
                             child: Text(
                                 'Lorem ipsum dolor sit amet consectetur. At interdum nec egestas risus. Varius et cursus arcu mauris nunc volutpat et vulputate. Felis tellus tempus varius cursus etiam sed id justo. Mi turpis at cursus et. Cum urna ut amet dignissim. Scelerisque orci. Lorem ipsum dolor sit amet consectetur. At interdum nec egestas risus. Varius et cursus arcu mauris nunc volutpat et vulputate. Felis tellus tempus varius cursus etiam sed id justo. Mi turpis at cursus et. Cum urna ut amet dignissim. Scelerisque orci. Lorem ipsum dolor sit amet consectetur. At interdum nec egestas risus. Varius et cursus arcu mauris nunc volutpat et vulputate. Felis tellus tempus varius cursus etiam sed id justo. Mi turpis at cursus et. Cum urna ut amet dignissim. Scelerisque orci.',
-                                style: AppStyles().quicksand(12,
+                                style: AppStyles().quickSand(12,
                                     AppColor.kTextWhiteColor, FontWeight.w400)))
                       ],
                     ),
@@ -101,7 +101,7 @@ class _MovieDetailState extends State<MovieDetail> {
                           style: AppStyles().montserrat(
                               16, AppColor.kTextWhiteColor, FontWeight.w700)),
                       Text('View All',
-                          style: AppStyles().quicksand(
+                          style: AppStyles().quickSand(
                               8, AppColor.kTextPinkColor, FontWeight.w400))
                     ],
                   ),
@@ -123,7 +123,7 @@ class _MovieDetailState extends State<MovieDetail> {
                                   image: AssetImage(
                                       ImageConstant().movieList[index])),
                               Text(movieNames[index],
-                                  style: AppStyles().quicksand(
+                                  style: AppStyles().quickSand(
                                       12,
                                       AppColor.kTextWhiteColor,
                                       FontWeight.w700))
