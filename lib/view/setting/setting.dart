@@ -232,7 +232,7 @@ class _SettingState extends State<Setting> {
                 const SizedBox(height: 24,),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 24),
-                  child: CustomButton(onTap: (){}, title: 'Logout', color: AppColor.kPink),
+                  child: CustomButton(onTap: (){}, title: 'Log Out', color: AppColor.kPink),
                 )
               ],
             ),

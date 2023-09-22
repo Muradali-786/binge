@@ -197,7 +197,7 @@ class _AccountSetupState extends State<AccountSetup> {
                       onTap: () {
                         Navigator.pushNamed(context, RouteName.bottomNav);
 
-                      }, title: 'Signup', color: AppColor.kPink),
+                      }, title: 'Sign Up', color: AppColor.kPink),
                 ),
 
 

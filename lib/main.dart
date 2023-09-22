@@ -1,5 +1,3 @@
-import 'package:binge/view/setting/setting.dart';
-import 'package:binge/view/splash/splash.dart';
 import 'package:flutter/material.dart';
 import 'utils/route/route_name.dart';
 import 'utils/route/routes.dart';
@@ -13,7 +11,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return const MaterialApp(
 
       debugShowCheckedModeBanner: false,
       title: 'Binge',//title of the app,
