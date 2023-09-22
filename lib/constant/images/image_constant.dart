@@ -1,5 +1,5 @@
 class ImageConstant {
-  static String bingeLogo = 'assets/image_png/binge_logo.png';
+  static String bingeLogo = 'assets/image_png/binge_logo1.png';
   static String watchMovie = 'assets/image_png/watch.png';
   static String binge = 'assets/image_png/binge.png';
   static String horror = 'assets/image_png/horror.png';

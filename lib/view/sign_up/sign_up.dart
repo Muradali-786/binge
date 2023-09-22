@@ -174,7 +174,7 @@ class _SignUpState extends State<SignUp> {
                                 children: [
                                   const Icon(
                                     Icons.check_box,
-                                    color: AppColor.kPink,
+                                    color: AppColor.kWhite,
                                   ),
                                   Text(
                                     'Remember Me',
@@ -192,7 +192,7 @@ class _SignUpState extends State<SignUp> {
                               children: [
                                 const Icon(
                                   Icons.check_box,
-                                  color: AppColor.kPink,
+                                  color: AppColor.kWhite,
                                 ),
                                 Expanded(
                                   child: Text(

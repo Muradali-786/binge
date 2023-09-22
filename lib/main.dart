@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Binge',//title of the app,
 
 
+
       initialRoute: RouteName.splash,
       onGenerateRoute: Routes.generateRoute,
     );

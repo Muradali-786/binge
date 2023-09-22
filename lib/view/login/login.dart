@@ -148,7 +148,7 @@ class _LoginState extends State<Login> {
                               children: [
                                 const Icon(
                                   Icons.check_box,
-                                  color: AppColor.kPink,
+                                  color: AppColor.kWhite,
                                 ),
                                 Text(
                                   'Remember Me',
@@ -181,7 +181,7 @@ class _LoginState extends State<Login> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Text(
-                      'Not Register Yet?',
+                      'Not registered yet?',
                       style: AppStyles().nunitoSans(
                           w*0.044, AppColor.kTextWhiteColor, FontWeight.w400),
                     ),

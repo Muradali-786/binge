@@ -180,11 +180,11 @@ class _AccountSetupState extends State<AccountSetup> {
                        width: 30,
                        margin: const EdgeInsets.only(left: 12),
                        decoration: BoxDecoration(
-                        color:AppColor.kPink,
+                        color:AppColor.kWhite,
                            borderRadius: BorderRadius.circular(8)
                        ),
 
-                       child: const Center(child: Icon(Icons.arrow_drop_down,color: AppColor.kWhite,),),
+                       child: const Center(child: Icon(Icons.arrow_drop_down,color: AppColor.kBlack,),),
                      )
 
                     ],

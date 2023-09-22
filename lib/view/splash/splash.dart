@@ -25,7 +25,10 @@ class _SplashState extends State<Splash> {
     return Scaffold(
       backgroundColor: AppColor.kBackgroundColor,
       body: Center(
-        child: LogoImage(height: 192,width: 267),
+        child: Padding(
+          padding: const EdgeInsets.only(right: 28.0),
+          child: LogoImage(height: 200,width: 275),
+        ),
       ),
     );
   }
