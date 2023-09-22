@@ -27,7 +27,7 @@ class _OTPState extends State<OTP> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-              const LogoImage(),
+             LogoImage(),
                 Padding(
                   padding: const EdgeInsets.only(left: 22),
                   child: Text('OTP',

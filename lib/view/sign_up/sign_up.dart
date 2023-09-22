@@ -1,6 +1,5 @@
 import 'package:binge/constant/app_style/app_color.dart';
 import 'package:binge/constant/app_style/app_style.dart';
-import 'package:binge/constant/images/image_constant.dart';
 import 'package:binge/utils/component/custom_button.dart';
 import 'package:binge/utils/component/input_text_field.dart';
 import 'package:binge/utils/component/logo_image.dart';
@@ -38,6 +37,7 @@ class _SignUpState extends State<SignUp> {
   }
   @override
   Widget build(BuildContext context) {
+    double w=MediaQuery.of(context).size.width;
     return Scaffold(
         backgroundColor: AppColor.kBackgroundColor,
         body: SafeArea(
@@ -47,7 +47,7 @@ class _SignUpState extends State<SignUp> {
                 const EdgeInsets.only( right: 27, left: 27, bottom: 24),
                 child: Column(
                   children: [
-                    const LogoImage(),
+                    LogoImage(),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -56,8 +56,13 @@ class _SignUpState extends State<SignUp> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('Login',style: AppStyles().catamaran(
-                                32, AppColor.kTextWhiteColor, FontWeight.w400),),
+                            TextButton(
+                              onPressed: (){
+                                Navigator.pushNamed(context, RouteName.login);
+                              },
+                              child: Text('Login',style: AppStyles().catamaran(
+                                  32, AppColor.kTextWhiteColor, FontWeight.w400),),
+                            ),
                             const SizedBox(
                               width: 30,
                               child: Divider(
@@ -217,7 +222,7 @@ class _SignUpState extends State<SignUp> {
                         Text(
                           'Already Have Account?',
                           style: AppStyles().nunitoSans(
-                              16, AppColor.kTextWhiteColor, FontWeight.w400),
+                              w*0.045, AppColor.kTextWhiteColor, FontWeight.w400),
                         ),
                         TextButton(
                           onPressed: () {

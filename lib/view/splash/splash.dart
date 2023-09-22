@@ -1,5 +1,6 @@
 import 'package:binge/constant/app_style/app_color.dart';
 import 'package:binge/constant/images/image_constant.dart';
+import 'package:binge/utils/component/logo_image.dart';
 import 'package:binge/view_model/services/splash_services.dart';
 import 'package:flutter/material.dart';
 
@@ -24,10 +25,7 @@ class _SplashState extends State<Splash> {
     return Scaffold(
       backgroundColor: AppColor.kBackgroundColor,
       body: Center(
-        child: Image(
-            height: 192,
-            width:267,
-            image: AssetImage(ImageConstant.bingeLogo)),
+        child: LogoImage(height: 192,width: 267),
       ),
     );
   }

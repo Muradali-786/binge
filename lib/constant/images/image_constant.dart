@@ -1,6 +1,4 @@
-class ImageConstant{
-
-
+class ImageConstant {
   static String bingeLogo = 'assets/image_png/binge_logo.png';
   static String watchMovie = 'assets/image_png/watch.png';
   static String binge = 'assets/image_png/binge.png';
@@ -43,11 +41,66 @@ class ImageConstant{
   static String boxIcon = 'assets/icon_png/box.png';
   static String starIcon = 'assets/icon_png/star.png';
   static String timerIcon = 'assets/icon_png/timer.png';
+  static String home = 'assets/icon_png/home.png';
+  static String moviesIcon = 'assets/icon_png/moviesIcon.png';
+  static String channelsIcon = 'assets/icon_png/channelsIcon.png';
+  static String mychannelsIcon = 'assets/icon_png/mychannel.png';
+  static String settingIcon = 'assets/icon_png/settingIcon.png';
+
+  static String ellipseImg = 'assets/image_png/Ellipse.png';
+  static String ArrowDownIcon = 'assets/icon_png/arrow.png';
+  static String ArrowStraightIcon = 'assets/icon_png/arrow1.png';
+  static String cinemaImg = 'assets/image_png/cinema.png';
+  static String sliderImg1 = 'assets/image_png/slider1.png';
+  static String sliderImg2 = 'assets/image_png/slider2.png';
+  static String randommovement = 'assets/image_png/randommovement.png';
+  static String listone = 'assets/image_png/listone.png';
+  static String activechannel = 'assets/image_png/activechannel.png';
+  static String activecinema = 'assets/image_png/activecinema.png';
+  static String activehome = 'assets/image_png/activehome.png';
+  static String activemovies = 'assets/image_png/activemovies.png';
 
 
-  List<dynamic> imageList=[trenchImage,blueBeetleImage,transformerImage];
-  List<dynamic> movieList=[niveMovieImg,soulMovieImg,niveMovieImg,soulMovieImg];
-  List<dynamic> categoriesMoviesList=[anime,animation,action,sunImage,horror,sciFi,anime,animation,action,sunImage];
+  List<dynamic> imageList = [trenchImage, blueBeetleImage, transformerImage];
+  List<dynamic> movieList = [
+    niveMovieImg,
+    soulMovieImg,
+    niveMovieImg,
+    soulMovieImg
+  ];
+  List<dynamic> categoriesMoviesList = [
+    anime,
+    animation,
+    action,
+    sunImage,
+    horror,
+    sciFi,
+    anime,
+    animation,
+    action,
+    sunImage
+  ];
+  List<dynamic> categoriesCinemaList = [
+    sliderImg1,
+    sliderImg2,
+    sliderImg1,
+    sliderImg2,
+    sliderImg1,
+    sliderImg2,
+    sliderImg1,
+    sliderImg2,
+    sliderImg1,
+    sliderImg2,
+    sliderImg1,
+    sliderImg2,
+    sliderImg1,
+    sliderImg2,
+    sliderImg1,
+    sliderImg2,
+    sliderImg1,
+    sliderImg2,
+    sliderImg1,
+    sliderImg1,
 
-
+  ];
 }

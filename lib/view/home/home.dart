@@ -2,7 +2,10 @@ import 'package:binge/constant/app_style/app_color.dart';
 import 'package:binge/constant/app_style/app_style.dart';
 import 'package:binge/constant/images/image_constant.dart';
 import 'package:binge/utils/route/route_name.dart';
+import 'package:binge/view/home/categories/categories.dart';
+import 'package:binge/view/home/movie_detail/movie_detail.dart';
 import 'package:flutter/material.dart';
+import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -19,14 +22,20 @@ class _HomeState extends State<Home> {
       body: SafeArea(
           child: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(top: 34.0, left: 22, right: 5,bottom: 25),
+          padding: const EdgeInsets.only(top: 34.0, left: 9, right: 5,bottom: 25),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               InkWell(
                 onTap: (){
-                  Navigator.pushNamed(context, RouteName.categories);
+                  // Navigator.pushNamed(context, RouteName.categories);
+                  PersistentNavBarNavigator.pushNewScreen(
+                    context,
+                    screen: Categories(),
+                    withNavBar: true, // OPTIONAL VALUE. True by default.
+                    pageTransitionAnimation: PageTransitionAnimation.cupertino,
+                  );
                 },
                 child: Image(
                     height: 24,
@@ -38,7 +47,13 @@ class _HomeState extends State<Home> {
               ),
               InkWell(
                 onTap: (){
-                  Navigator.pushNamed(context, RouteName.movieDetail);
+                  // Navigator.pushNamed(context, RouteName.movieDetail);
+                  PersistentNavBarNavigator.pushNewScreen(
+                    context,
+                    screen: MovieDetail(),
+                    withNavBar: true, // OPTIONAL VALUE. True by default.
+                    pageTransitionAnimation: PageTransitionAnimation.cupertino,
+                  );
                 },
                 child: Container(
                   height: 180,
@@ -99,6 +114,7 @@ class _HomeState extends State<Home> {
                 padding: const EdgeInsets.only(top:20,bottom: 12),
                 child: Row(
                   children: [
+                    const SizedBox(width: 15,),
                     Text(
                      'Top 10 in your country',
                       style: AppStyles()
@@ -150,13 +166,14 @@ class MovieList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 15.0,right: 5),
+      padding: const EdgeInsets.only(top: 15.0,),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
+              const SizedBox(width: 15,),
               Text(
                 title,
                 style: AppStyles()

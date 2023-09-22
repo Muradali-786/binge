@@ -1,3 +1,7 @@
+import 'package:binge/view/home/navbar/my_nav_bar.dart';
+import 'package:binge/view/channel/channels.dart';
+import 'package:binge/view/channel/my_channel.dart';
+import 'package:binge/view/cinema/cinema.dart';
 import 'package:binge/view/create_channel/create_channel.dart';
 import 'package:binge/view/home/categories/categories.dart';
 import 'package:binge/view/home/movie_detail/movie_detail.dart';
@@ -8,6 +12,8 @@ import 'package:binge/view/otp/otp.dart';
 import 'package:binge/view/profile_setup/account/account_setup.dart';
 import 'package:binge/view/profile_setup/age/age_selection.dart';
 import 'package:binge/view/profile_setup/profile_setup.dart';
+import 'package:binge/view/setting/profile.dart';
+import 'package:binge/view/setting/setting.dart';
 import 'package:binge/view/sign_up/sign_up.dart';
 import 'package:binge/view/upload_movie/upload_movie.dart';
 import 'package:flutter/material.dart';
@@ -47,6 +53,19 @@ class Routes {
         return MaterialPageRoute(builder: (_) => const WatchMovie());
       case RouteName.movies:
         return MaterialPageRoute(builder: (_) => const Movies());
+      case RouteName.setting:
+        return MaterialPageRoute(builder: (_) => const Setting());
+      case RouteName.channels:
+        return MaterialPageRoute(builder: (_) => const Channels());
+      case RouteName.myChannel:
+        return MaterialPageRoute(builder: (_) => const MyChannel());
+      case RouteName.profile:
+        return MaterialPageRoute(builder: (_) => const Profile());
+      case RouteName.cinema:
+        return MaterialPageRoute(builder: (_) => const Cinema());
+      case RouteName.bottomNav:
+        return MaterialPageRoute(builder: (_) => const BottomNavBar());
+
 
 
       default:

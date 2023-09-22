@@ -2,8 +2,10 @@ import 'package:binge/constant/app_style/app_color.dart';
 import 'package:binge/constant/app_style/app_style.dart';
 import 'package:binge/constant/images/image_constant.dart';
 import 'package:binge/utils/route/route_name.dart';
+import 'package:binge/view/home/watch_movie/watch_movie.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class MovieDetail extends StatefulWidget {
   const MovieDetail({super.key});
@@ -52,7 +54,13 @@ class _MovieDetailState extends State<MovieDetail> {
 
                   (
                     onTap: (){
-                      Navigator.pushNamed(context, RouteName.watchMovie);
+                      // Navigator.pushNamed(context, RouteName.watchMovie);
+                      PersistentNavBarNavigator.pushNewScreen(
+                        context,
+                        screen: WatchMovie(),
+                        withNavBar: false, // OPTIONAL VALUE. True by default.
+                        pageTransitionAnimation: PageTransitionAnimation.cupertino,
+                      );
                     },
                     child: Image(image: AssetImage(ImageConstant.pauseIcon))),),
 

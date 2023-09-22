@@ -55,7 +55,7 @@ class _AccountSetupState extends State<AccountSetup> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const LogoImage(),
+                LogoImage(),
                 Center(
                   child: Text(
                     'Set up your account',
@@ -195,10 +195,9 @@ class _AccountSetupState extends State<AccountSetup> {
                   padding: const EdgeInsets.only(top: 18,bottom: 30),
                   child: CustomButton(
                       onTap: () {
-                        Navigator.pushNamed(context, RouteName.home);
+                        Navigator.pushNamed(context, RouteName.bottomNav);
 
-
-                      }, title: 'Proceed', color: AppColor.kPink),
+                      }, title: 'Signup', color: AppColor.kPink),
                 ),
 
 

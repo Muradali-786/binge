@@ -33,6 +33,7 @@ class _LoginState extends State<Login> {
   }
   @override
   Widget build(BuildContext context) {
+    double w=MediaQuery.of(context).size.width;
     return Scaffold(
         backgroundColor: AppColor.kBackgroundColor,
         body: SafeArea(
@@ -42,7 +43,7 @@ class _LoginState extends State<Login> {
                 const EdgeInsets.only( right: 27, left: 27, bottom:24),
             child: Column(
               children: [
-                const LogoImage(),
+               LogoImage(),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -65,8 +66,10 @@ class _LoginState extends State<Login> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Sign Up',style: AppStyles().catamaran(
-                            32, AppColor.kTextWhiteColor, FontWeight.w400),),
+                       TextButton(onPressed: (){
+                         Navigator.pushNamed(context, RouteName.signUp);
+                       }, child:  Text('Sign Up',style: AppStyles().catamaran(
+                           32, AppColor.kTextWhiteColor, FontWeight.w400),)),
                         const SizedBox(
                           width: 30,
                           child: Divider(
@@ -171,15 +174,16 @@ class _LoginState extends State<Login> {
                   padding: const EdgeInsets.only(top: 20, bottom: 20),
                   child: CustomButton(
                       onTap: () {
-                        Navigator.pushNamed(context, RouteName.home);
+                        Navigator.pushNamed(context, RouteName.bottomNav);
                       }, title: 'Login', color: AppColor.kPink),
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Text(
                       'Not Register Yet?',
                       style: AppStyles().nunitoSans(
-                          16, AppColor.kTextWhiteColor, FontWeight.w400),
+                          w*0.044, AppColor.kTextWhiteColor, FontWeight.w400),
                     ),
                     Expanded(
                       child: TextButton(
@@ -190,7 +194,7 @@ class _LoginState extends State<Login> {
                         child: Text(
                           ' Create an account',
                           style: AppStyles().nunitoSans(
-                              18, AppColor.kTextPinkColor, FontWeight.w600),
+                              w*0.049, AppColor.kTextPinkColor, FontWeight.w600),
                         ),
                       ),
                     )

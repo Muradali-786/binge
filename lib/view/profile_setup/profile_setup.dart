@@ -27,7 +27,7 @@ class _ProfileSetupState extends State<ProfileSetup> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const LogoImage(),
+           LogoImage(),
             Padding(
               padding: const EdgeInsets.only(left: 22, bottom: 30),
               child: Text(

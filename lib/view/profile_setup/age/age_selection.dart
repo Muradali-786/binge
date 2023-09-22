@@ -25,7 +25,7 @@ class _AgeSelectionState extends State<AgeSelection> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const LogoImage(),
+            LogoImage(),
             Padding(
               padding: const EdgeInsets.only(left: 22, bottom: 30),
               child: Text(

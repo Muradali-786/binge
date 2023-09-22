@@ -15,6 +15,12 @@ class RouteName {
   static const String categories = 'categories';
   static const String watchMovie = 'watch_movie';
   static const String movies = 'movies';
+  static const String profile = 'profile';
+  static const String setting = 'setting';
+  static const String channels = 'channels';
+  static const String myChannel = 'my_channel';
+  static const String cinema = 'cinema';
+  static const String bottomNav = 'bottomNav';
 
 
 
