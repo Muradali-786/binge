@@ -9,8 +9,6 @@ class RouteName {
   static const String profileSetup = 'profile_setup';
   static const String ageSelection = 'age_selection';
   static const String accountSetup = 'account_setup';
-  static const String createChannel = 'create_channel';
-  static const String uploadMovie = 'upload_movie';
   static const String movieDetail = 'movie_detail';
   static const String categories = 'categories';
   static const String watchMovie = 'watch_movie';
@@ -21,6 +19,10 @@ class RouteName {
   static const String myChannel = 'my_channel';
   static const String cinema = 'cinema';
   static const String bottomNav = 'bottomNav';
+
+
+  // static const String createChannel = 'create_channel';
+  // static const String uploadMovie = 'upload_movie';
 
 
 

@@ -39,10 +39,10 @@ class Routes {
         return MaterialPageRoute(builder: (_) => const AgeSelection());
       case RouteName.accountSetup:
         return MaterialPageRoute(builder: (_) => const AccountSetup());
-      case RouteName.createChannel:
-        return MaterialPageRoute(builder: (_) => const CreateChannel());
-      case RouteName.uploadMovie:
-        return MaterialPageRoute(builder: (_) => const UploadMovie());
+      // case RouteName.createChannel:
+      //   return MaterialPageRoute(builder: (_) => const CreateChannel());
+      // case RouteName.uploadMovie:
+      //   return MaterialPageRoute(builder: (_) => const UploadMovie());
       case RouteName.movieDetail:
         return MaterialPageRoute(builder: (_) => const MovieDetail());
       case RouteName.home:

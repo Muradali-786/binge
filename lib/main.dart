@@ -16,8 +16,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Binge',//title of the app,
 
-
-
       initialRoute: RouteName.splash,
       onGenerateRoute: Routes.generateRoute,
     );
